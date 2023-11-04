@@ -133,9 +133,6 @@ namespace OpenKNX
         openknx.progButton.onShortClick([]() -> void {
             knx.toggleProgMode();
         });
-        openknx.progButton.onDoubleClick([]() -> void {
-            openknx.progLed.pulsing();
-        });
 
         knx.ledPin(0);
         knx.setProgLedOnCallback([]() -> void {
